@@ -4,7 +4,7 @@ import { Footer } from './Testimonials';
 import { Reveal } from './Reveal';
 
 const MARQUEE = [
-  'Scholarship Learning',
+  'Scholarbridge Learning',
   'Career-Ready Skills',
   'Add to Cart',
   'Place Order',
@@ -15,7 +15,7 @@ const MARQUEE = [
 export function InfoLayout({
   title,
   subtitle,
-  eyebrow = 'Scholarship',
+  eyebrow = 'Scholarbridge',
   children,
 }: {
   title: string;

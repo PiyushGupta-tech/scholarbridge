@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
+import { CompanyInfo } from '../components/CompanyInfo';
 import { InfoCardGrid, InfoLayout } from '../components/InfoLayout';
+import { COMPANY } from '../data/company';
 
 export function TermsPage() {
   return (
     <InfoLayout
       eyebrow="Policies · Terms"
       title="Clear rules. Fair learning."
-      subtitle="These Terms keep Scholarship fair for every learner who browses, carts, buys, and places an order on this site."
+      subtitle="These Terms keep Scholarbridge fair for every learner who browses, carts, buys, and places an order on this site."
     >
       <p className="info-updated">Last updated: September 18, 2026</p>
 
@@ -15,7 +17,7 @@ export function TermsPage() {
           {
             icon: '✅',
             title: 'Agreement',
-            text: 'Using Scholarship means you accept these Terms and our Privacy Policy.',
+            text: 'Using Scholarbridge means you accept these Terms and our Privacy Policy.',
           },
           {
             icon: '📚',
@@ -40,7 +42,7 @@ export function TermsPage() {
         <ul>
           <li>Don’t misuse cart, checkout, or other learners’ data</li>
           <li>Don’t redistribute course materials beyond your license</li>
-          <li>Don’t attempt unauthorized access to Scholarship systems</li>
+          <li>Don’t attempt unauthorized access to Scholarbridge systems</li>
           <li>Don’t use the platform for unlawful or harmful purposes</li>
         </ul>
       </section>
@@ -51,6 +53,16 @@ export function TermsPage() {
           Programs are educational. We don’t guarantee specific jobs, exam scores,
           or career results — we give you the tools to compete.
         </p>
+      </section>
+
+      <section>
+        <h2>Who we are</h2>
+        <p>
+          This site and all Scholarbridge programs are provided by{' '}
+          {COMPANY.legalName}. These Terms are an agreement between you and{' '}
+          {COMPANY.legalName}.
+        </p>
+        <CompanyInfo />
       </section>
 
       <section>

@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { SocialLinks } from './SocialLinks';
+import { ContactChips } from './ContactChips';
 
 const MENU_LINKS = [
   { to: '/', label: 'Home', end: true, hint: 'Start exploring' },
   { to: '/courses', label: 'Courses', hint: '83+ programs' },
-  { to: '/why-us', label: 'Why Us', hint: 'The Scholarship edge' },
+  { to: '/why-us', label: 'Why Us', hint: 'The Scholarbridge edge' },
   { to: '/about', label: 'About', hint: 'Our story' },
   { to: '/contact', label: 'Contact', hint: 'Talk to us' },
   { to: '/cart', label: 'Cart', hint: 'Your enrollments' },
@@ -74,7 +74,7 @@ export function Navbar() {
       >
         <div className="container nav-inner">
           <Link to="/" className="logo" onClick={close}>
-            Scholar<span>ship</span>
+            Scholar<span>bridge</span>
           </Link>
 
           <ul className="nav-links nav-links-desktop">
@@ -89,9 +89,6 @@ export function Navbar() {
           </ul>
 
           <div className="nav-actions">
-            <div className="nav-social">
-              <SocialLinks variant="compact" />
-            </div>
             <button
               type="button"
               className="cart-btn"
@@ -147,7 +144,7 @@ export function Navbar() {
         >
           <div className="mobile-menu-head">
             <div>
-              <p className="mobile-menu-kicker">Scholarship Menu</p>
+              <p className="mobile-menu-kicker">Scholarbridge Menu</p>
               <strong>Where to next?</strong>
             </div>
           </div>
@@ -179,7 +176,11 @@ export function Navbar() {
           </nav>
 
           <div className="mobile-menu-foot">
-            <SocialLinks variant="compact" label="Follow Scholarship" />
+            <ContactChips
+              variant="dark"
+              className="mobile-menu-contact"
+              tabIndex={open ? 0 : -1}
+            />
             <button
               type="button"
               className="btn btn-lime"

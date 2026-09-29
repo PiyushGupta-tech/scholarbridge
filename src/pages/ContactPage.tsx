@@ -1,7 +1,9 @@
 import { useState, type FormEvent } from 'react';
 import { Link } from 'react-router-dom';
+import { CompanyAddress } from '../components/CompanyInfo';
+import { ContactChips } from '../components/ContactChips';
 import { InfoCardGrid, InfoLayout } from '../components/InfoLayout';
-import { SocialLinks } from '../components/SocialLinks';
+import { COMPANY } from '../data/company';
 
 export function ContactPage() {
   const [sent, setSent] = useState(false);
@@ -21,7 +23,7 @@ export function ContactPage() {
     <InfoLayout
       eyebrow="Explore · Contact"
       title="Let’s talk — we’re listening"
-      subtitle="Courses, cart questions, refunds, partnerships — send a note or ping us on social. Scholarship support is human, fast, and friendly."
+      subtitle="Courses, cart questions, refunds, partnerships — send a note or give us a call. Scholarbridge support is human, fast, and friendly."
     >
       <InfoCardGrid
         cards={[
@@ -45,26 +47,24 @@ export function ContactPage() {
 
       <div className="contact-grid">
         <section>
-          <h2>Reach Scholarship</h2>
+          <h2>Reach Scholarbridge</h2>
+          <ContactChips variant="light" className="contact-page-chips" />
           <ul className="contact-details">
-            <li>
-              <strong>Hello</strong>
-              <span>hello@scholarship.learn</span>
-            </li>
-            <li>
-              <strong>Support</strong>
-              <span>support@scholarship.learn</span>
-            </li>
-            <li>
-              <strong>Phone / WhatsApp</strong>
-              <span>+91 98765 43210</span>
-            </li>
             <li>
               <strong>Hours</strong>
               <span>Mon–Sat · 10:00 AM – 6:00 PM IST</span>
             </li>
+            <li>
+              <strong>Registered company</strong>
+              <span>
+                {COMPANY.legalName} · {COMPANY.constitution}
+              </span>
+            </li>
+            <li>
+              <strong>Office address</strong>
+              <CompanyAddress className="contact-address" />
+            </li>
           </ul>
-          <SocialLinks variant="light" label="Message us instantly" />
           <p style={{ marginTop: '1rem' }}>
             Looking for policies? See{' '}
             <Link to="/refund">Refunds</Link>, <Link to="/privacy">Privacy</Link>
@@ -79,7 +79,7 @@ export function ContactPage() {
               <strong>Got it — thanks {form.name || 'friend'}!</strong>
               <p>
                 Your message is saved in this browser session. In production this
-                would email Scholarship support; here the full contact flow still
+                would email Scholarbridge support; here the full contact flow still
                 works end to end.
               </p>
               <button
@@ -143,7 +143,7 @@ export function ContactPage() {
                 />
               </label>
               <button type="submit" className="btn btn-lime">
-                Send to Scholarship
+                Send to Scholarbridge
               </button>
             </form>
           )}

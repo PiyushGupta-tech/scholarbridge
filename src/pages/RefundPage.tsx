@@ -6,7 +6,7 @@ export function RefundPage() {
     <InfoLayout
       eyebrow="Policies · Refunds"
       title="Enroll with confidence"
-      subtitle="Scholarship keeps refunds simple: a clear window, honest eligibility, and human support when you need to cancel."
+      subtitle="Scholarbridge keeps refunds simple: a clear window, honest eligibility, and human support when you need to cancel."
     >
       <p className="info-updated">Last updated: September 18, 2026</p>
 
@@ -47,7 +47,7 @@ export function RefundPage() {
         <h2>Cancellations</h2>
         <p>
           If access hasn’t started, contact us quickly so we can cancel before
-          materials unlock. Start here: <Link to="/contact">Contact Scholarship</Link>.
+          materials unlock. Start here: <Link to="/contact">Contact Scholarbridge</Link>.
         </p>
       </section>
     </InfoLayout>

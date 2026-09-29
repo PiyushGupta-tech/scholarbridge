@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { InfoCardGrid, InfoLayout, InfoStatRow } from '../components/InfoLayout';
-import { SocialLinks } from '../components/SocialLinks';
 import { CATEGORIES, COURSES } from '../data/courses';
 import { Reveal } from '../components/Reveal';
 
@@ -11,7 +10,7 @@ export function CoursesPage() {
     <InfoLayout
       eyebrow="Explore · Courses"
       title="Programs built for real careers"
-      subtitle="Browse Scholarship’s full catalog — AI, web, cloud, sciences, creative arts, and more. Filter by path, add to cart, and enroll without leaving the site."
+      subtitle="Browse Scholarbridge’s full catalog — AI, web, cloud, sciences, creative arts, and more. Filter by path, add to cart, and enroll without leaving the site."
     >
       <InfoStatRow
         items={[
@@ -26,7 +25,7 @@ export function CoursesPage() {
         <section>
           <h2>Find your next skill</h2>
           <p>
-            Every Scholarship program is designed around practice — projects,
+            Every Scholarbridge program is designed around practice — projects,
             certification prep, and clear outcomes. Pick a path below or open the
             full animated catalog on the homepage.
           </p>
@@ -79,7 +78,7 @@ export function CoursesPage() {
         <section className="info-cta-block">
           <h2>Ready to enroll?</h2>
           <p>
-            Open the full Scholarship catalog, filter by category, and start your
+            Open the full Scholarbridge catalog, filter by category, and start your
             journey today.
           </p>
           <div className="info-cta-actions">
@@ -87,13 +86,11 @@ export function CoursesPage() {
               View all programs
             </Link>
             <Link to="/why-us" className="btn btn-outline">
-              Why Scholarship
+              Why Scholarbridge
             </Link>
           </div>
         </section>
       </Reveal>
-
-      <SocialLinks variant="light" label="Share your learning wins" />
     </InfoLayout>
   );
 }

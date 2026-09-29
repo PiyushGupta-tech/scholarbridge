@@ -22,14 +22,14 @@ export function Showcase() {
         <Reveal variant="up">
           <div className="showcase-intro">
             <div className="showcase-intro-copy">
-              <span className="showcase-kicker">Scholarship Experience</span>
+              <span className="showcase-kicker">Scholarbridge Experience</span>
               <h2>
                 Designed for <em>modern</em> learners
               </h2>
             </div>
             <p>
               Bold visuals. Clear paths. Courses you enroll in right here —
-              cart, buy now, place order — all on Scholarship.
+              cart, buy now, place order — all on Scholarbridge.
             </p>
           </div>
         </Reveal>
@@ -52,25 +52,25 @@ export function Showcase() {
           <Reveal variant="scale" delay={100}>
             <div className="showcase-frame">
               <div className="showcase-frame-shine" aria-hidden="true" />
-              <span className="showcase-badge">Scholarship Featured</span>
+              <span className="showcase-badge">Scholarbridge Featured</span>
               <div className="showcase-frame-media">
                 <img
                   src="/images/scholarship-hero.jpg"
-                  alt="Scholarship lifelong learning platform"
+                  alt="Scholarbridge lifelong learning platform"
                 />
                 <div className="showcase-img-fx" aria-hidden="true">
                   <span className="showcase-brand-mask" />
                   <span className="showcase-brand-patch">
-                    Scholar<span>ship</span>
+                    Scholar<span>bridge</span>
                   </span>
                 </div>
               </div>
               <div className="showcase-overlay">
                 <div className="showcase-overlay-copy">
-                  <h3>Your Scholarship journey starts here</h3>
+                  <h3>Your Scholarbridge journey starts here</h3>
                   <p>
                     Discover programs, add to cart, and place orders — all on
-                    the Scholarship platform.
+                    the Scholarbridge platform.
                   </p>
                 </div>
                 <div className="showcase-overlay-actions">
@@ -92,7 +92,7 @@ export function Showcase() {
                 Learning live
               </div>
               <strong>10k+</strong>
-              <p>learners leveling up this month on Scholarship</p>
+              <p>learners leveling up this month on Scholarbridge</p>
               <div className="showcase-side-bar">
                 <i style={{ width: '78%' }} />
               </div>
@@ -105,14 +105,14 @@ export function Showcase() {
           <div className="showcase-strip">
             <div className="showcase-strip-track">
               {[
-                'Scholarship Learning',
+                'Scholarbridge Learning',
                 'Career-Ready Skills',
                 'Add to Cart',
                 'Buy Now',
                 'Place Order',
                 'AI · Web · Cloud',
                 'Sciences · Arts',
-                'Scholarship Learning',
+                'Scholarbridge Learning',
                 'Career-Ready Skills',
                 'Add to Cart',
                 'Buy Now',

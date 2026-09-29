@@ -1,6 +1,7 @@
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { formatINR, useCart } from '../context/CartContext';
 import type { Order } from '../types';
+import { ContactChips } from '../components/ContactChips';
 import { Footer } from '../components/Testimonials';
 
 export function OrderSuccessPage() {
@@ -51,6 +52,10 @@ export function OrderSuccessPage() {
                 </p>
               </div>
             )}
+            <div className="success-help">
+              <p>Questions about your order? Share your Order ID with us.</p>
+              <ContactChips variant="light" />
+            </div>
             <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link to="/" className="btn btn-lime">
                 Back to Home

@@ -6,7 +6,7 @@ export function CookiesPage() {
     <InfoLayout
       eyebrow="Policies · Cookies"
       title="Small files. Big smoothness."
-      subtitle="Scholarship uses cookies and local storage so your cart, orders, and preferences feel seamless while you learn."
+      subtitle="Scholarbridge uses cookies and local storage so your cart, orders, and preferences feel seamless while you learn."
     >
       <p className="info-updated">Last updated: September 18, 2026</p>
 

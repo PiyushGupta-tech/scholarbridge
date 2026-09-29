@@ -38,7 +38,7 @@ export function Hero() {
               </div>
             </div>
 
-            <p className="hero-kicker">Scholarship · Future-ready skills</p>
+            <p className="hero-kicker">Scholarbridge · Future-ready skills</p>
 
             <h1>
               Your Journey To{' '}
@@ -47,7 +47,7 @@ export function Hero() {
 
             <p className="hero-lead">
               Empowering students and professionals through high-quality online
-              programs — the Scholarship way. Browse courses, add to cart, and
+              programs — the Scholarbridge way. Browse courses, add to cart, and
               place orders right here.
             </p>
 
@@ -126,7 +126,7 @@ export function Hero() {
         <div className="hero-bottom">
           <article className="success-card success-card-epic">
             <div className="success-copy">
-              <span className="success-chip">Scholarship Path</span>
+              <span className="success-chip">Scholarbridge Path</span>
               <h3>Graduate To Success Path</h3>
               <p>Building brighter futures through learning</p>
               <a href="#courses" className="success-link">

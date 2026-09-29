@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
+import { CompanyInfo } from '../components/CompanyInfo';
 import { InfoCardGrid, InfoLayout, InfoStatRow } from '../components/InfoLayout';
-import { SocialLinks } from '../components/SocialLinks';
+import { COMPANY } from '../data/company';
 
 export function AboutPage() {
   return (
     <InfoLayout
       eyebrow="Explore · About Us"
-      title="Scholarship is where ambition meets craft"
+      title="Scholarbridge is where ambition meets craft"
       subtitle="We’re building a learning home for students and professionals who want skills that travel — into jobs, projects, and the next chapter of their career."
     >
       <InfoStatRow
@@ -21,7 +22,7 @@ export function AboutPage() {
       <section>
         <h2>Who we are</h2>
         <p>
-          Scholarship is an online learning platform focused on real-world
+          Scholarbridge is an online learning platform focused on real-world
           competence. From Generative AI and full-stack web to cloud, pure
           sciences, mathematics, and the liberal arts — we teach with clarity,
           practice, and respect for your time.
@@ -61,13 +62,13 @@ export function AboutPage() {
           {
             icon: '💛',
             title: 'Human brand',
-            text: 'Support via contact, WhatsApp, Instagram, and Facebook.',
+            text: 'Real people answer via our contact page, email, and phone.',
           },
         ]}
       />
 
       <section>
-        <h2>What makes Scholarship different</h2>
+        <h2>What makes Scholarbridge different</h2>
         <ul>
           <li>Industry-minded instructors and career-shaped curricula</li>
           <li>Colorful, modern browsing so finding the right course feels effortless</li>
@@ -76,8 +77,18 @@ export function AboutPage() {
         </ul>
       </section>
 
+      <section>
+        <h2>Company information</h2>
+        <p>
+          Scholarbridge is a brand of {COMPANY.legalName}, a{' '}
+          {COMPANY.constitution.toLowerCase()} headquartered in Greater Noida
+          West, Uttar Pradesh.
+        </p>
+        <CompanyInfo />
+      </section>
+
       <section className="info-cta-block">
-        <h2>Join the Scholarship story</h2>
+        <h2>Join the Scholarbridge story</h2>
         <p>
           Whether you’re switching careers or sharpening a craft, we’re glad
           you’re here.
@@ -90,7 +101,6 @@ export function AboutPage() {
             Contact us
           </Link>
         </div>
-        <SocialLinks variant="light" label="Follow Scholarship" />
       </section>
     </InfoLayout>
   );

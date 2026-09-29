@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
+import { CompanyInfo } from '../components/CompanyInfo';
 import { InfoCardGrid, InfoLayout, InfoStatRow } from '../components/InfoLayout';
+import { COMPANY } from '../data/company';
 
 export function PrivacyPage() {
   return (
     <InfoLayout
       eyebrow="Policies · Privacy"
       title="Your data, protected with care"
-      subtitle="Scholarship collects only what we need to enroll you, support you, and improve learning — never to sell your story."
+      subtitle="Scholarbridge collects only what we need to enroll you, support you, and improve learning — never to sell your story."
     >
       <p className="info-updated">Last updated: September 18, 2026</p>
 
@@ -51,6 +53,17 @@ export function PrivacyPage() {
           it. No method online is perfect — use strong habits and share only what
           enrollment needs.
         </p>
+      </section>
+
+      <section>
+        <h2>Who is responsible for your data</h2>
+        <p>
+          Scholarbridge is operated by {COMPANY.legalName}, a{' '}
+          {COMPANY.constitution.toLowerCase()} based in Uttar Pradesh, India. Privacy
+          requests can be sent via <Link to="/contact">Contact</Link> or by post
+          to our principal place of business below.
+        </p>
+        <CompanyInfo />
       </section>
 
       <section>

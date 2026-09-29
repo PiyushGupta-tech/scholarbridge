@@ -621,10 +621,6 @@ p {
   gap: 1rem;
 }
 
-.mobile-menu-foot .social-label {
-  color: rgba(255, 255, 255, 0.75);
-}
-
 .mobile-menu-foot .btn {
   width: 100%;
 }
@@ -3538,62 +3534,6 @@ p {
   font-weight: 800;
 }
 
-.cta-social {
-  display: flex;
-  justify-content: center;
-  padding-top: 0.35rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.cta-social .social-links {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.cta-social .social-label {
-  color: #06261d;
-  font-size: 0.95rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  opacity: 1;
-  margin-bottom: 0.75rem;
-  display: inline-block;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  background: linear-gradient(120deg, #c8f560 0%, #f5e74a 100%);
-  border: 1px solid rgba(245, 231, 74, 0.65);
-  box-shadow:
-    0 10px 22px rgba(200, 245, 96, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  text-shadow: none;
-}
-
-.cta-social .social-row {
-  justify-content: center;
-}
-
-.cta-social .social-btn {
-  transition:
-    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.3s ease;
-  background: #ffffff !important;
-  backdrop-filter: none;
-  border: 1px solid rgba(255, 255, 255, 0.9) !important;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
-}
-
-.cta-social .social-name {
-  color: #06261d !important;
-  font-weight: 800;
-  font-size: 0.88rem;
-}
-
-.cta-social .social-btn:hover {
-  transform: translateY(-4px) scale(1.04);
-  background: var(--lime) !important;
-  box-shadow: 0 12px 28px rgba(200, 245, 96, 0.4);
-}
-
 @keyframes cta-bg-drift {
   from {
     transform: scale(1.12) translate3d(0, 0, 0);
@@ -3818,33 +3758,6 @@ p {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.footer-brand .social-links {
-  margin-top: 1.25rem;
-}
-
-.footer-brand .social-label {
-  color: #fff !important;
-  font-weight: 800;
-  opacity: 1;
-  margin-bottom: 0.65rem;
-}
-
-.footer-brand .social-btn {
-  background: #fff !important;
-  border: 1px solid rgba(255, 255, 255, 0.9) !important;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.footer-brand .social-name {
-  color: #06261d !important;
-  font-weight: 800;
-}
-
-.footer-brand .social-btn:hover {
-  background: var(--lime) !important;
-  transform: translateY(-3px);
-}
-
 .footer-col h4,
 .footer-cta h4 {
   color: #fff;
@@ -3982,6 +3895,16 @@ p {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.footer-company {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.35rem;
+}
+
+.footer-company .company-info {
+  margin-top: 0.85rem;
+}
+
 .footer-bottom p {
   margin: 0;
   font-size: 0.86rem;
@@ -4015,112 +3938,6 @@ p {
 .footer strong {
   color: white;
   font-family: var(--font-display);
-}
-
-/* Social links — Instagram / Facebook / WhatsApp */
-.social-links {
-  margin-top: 1rem;
-}
-
-.social-label {
-  font-size: 0.85rem;
-  font-weight: 700;
-  margin-bottom: 0.55rem;
-  color: inherit;
-  opacity: 0.9;
-}
-
-.social-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  align-items: center;
-}
-
-.social-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  border-radius: 999px;
-  padding: 0.4rem 0.75rem 0.4rem 0.4rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.social-ig svg {
-  filter: drop-shadow(0 1px 2px rgba(214, 36, 159, 0.35));
-}
-
-.social-btn:hover {
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-}
-
-.social-name {
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: #fff;
-  padding-right: 0.25rem;
-}
-
-.social-links--compact .social-btn {
-  padding: 0.3rem;
-  border-radius: 12px;
-}
-
-.social-links--light .social-btn {
-  background: #fff;
-  border: 1px solid rgba(15, 31, 26, 0.1);
-  box-shadow: 0 4px 14px rgba(11, 61, 46, 0.08);
-}
-
-.social-links--light .social-name {
-  color: #0f1f1a;
-}
-
-.social-links--light .social-label {
-  color: var(--forest-deep);
-}
-
-.social-links--light .social-btn:hover {
-  background: #f8fafc;
-  box-shadow: 0 8px 22px rgba(11, 61, 46, 0.12);
-}
-
-.nav-social {
-  display: flex;
-  align-items: center;
-}
-
-.nav-social .social-links {
-  margin-top: 0;
-}
-
-.nav-social .social-btn {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-  padding: 0.28rem;
-  border-radius: 10px;
-}
-
-.nav-social .social-btn:hover {
-  background: rgba(255, 255, 255, 0.22);
-}
-
-.nav-social .social-btn svg {
-  width: 20px;
-  height: 20px;
-}
-
-@media (max-width: 980px) {
-  .nav-social {
-    display: none;
-  }
 }
 
 /* Info / legal pages — LEARNme-inspired motion */
@@ -4651,6 +4468,290 @@ p {
 .contact-details strong {
   color: var(--forest-deep);
   font-size: 0.85rem;
+}
+
+.company-address {
+  display: grid;
+  gap: 0.35rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.company-address-row {
+  display: grid;
+  grid-template-columns: minmax(9.5rem, max-content) minmax(0, 1fr);
+  gap: 0.2rem 0.75rem;
+  align-items: baseline;
+}
+
+.company-address-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  opacity: 0.75;
+}
+
+.company-address-value {
+  display: grid;
+  overflow-wrap: anywhere;
+}
+
+.contact-address {
+  gap: 0.55rem;
+}
+
+.contact-address .company-address-row {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.contact-address .company-address-label {
+  color: var(--forest-deep);
+  opacity: 0.7;
+}
+
+@media (max-width: 520px) {
+  .company-address-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Company details (legal pages + footer) */
+.company-info {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.company-info-row {
+  grid-column: span 2;
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  min-width: 0;
+}
+
+.company-info-row--half {
+  grid-column: span 3;
+}
+
+.company-info-row--wide {
+  grid-column: 1 / -1;
+}
+
+.company-info dd a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid var(--lime);
+}
+
+.company-info dd a:hover {
+  border-bottom-color: var(--yellow);
+}
+
+.company-info dt {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.company-info dd {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.company-info--light .company-info-row {
+  background: linear-gradient(135deg, rgba(200, 245, 96, 0.18), rgba(245, 231, 74, 0.12));
+  border: 1px solid rgba(11, 61, 46, 0.1);
+}
+
+.company-info--light dt {
+  color: var(--forest-mid);
+}
+
+.company-info--light dd {
+  color: var(--forest-deep);
+}
+
+.company-info--dark .company-info-row {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(200, 245, 96, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.company-info--dark dt {
+  color: var(--lime);
+}
+
+.company-info--dark dd {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+@media (max-width: 760px) {
+  .company-info {
+    grid-template-columns: 1fr;
+  }
+
+  .company-info-row,
+  .company-info-row--half {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Email + phone chips */
+.contact-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.contact-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.55rem 1rem 0.55rem 0.55rem;
+  border-radius: 18px;
+  text-decoration: none !important;
+  overflow: hidden;
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-chip::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.contact-chip:hover {
+  transform: translateY(-3px);
+}
+
+.contact-chip:hover::after {
+  transform: translateX(120%);
+}
+
+.contact-chip:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+.contact-chip-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  color: #06261d;
+  background: linear-gradient(135deg, var(--lime), var(--yellow));
+  box-shadow: 0 6px 16px rgba(200, 245, 96, 0.35);
+}
+
+.contact-chip-text {
+  display: grid;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.contact-chip-text small {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-chip-text strong {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.contact-chips--dark .contact-chip {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(200, 245, 96, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.contact-chips--dark .contact-chip:hover {
+  border-color: rgba(200, 245, 96, 0.6);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.contact-chips--dark .contact-chip-text small {
+  color: var(--lime);
+}
+
+.contact-chips--dark .contact-chip-text strong {
+  color: #fff;
+}
+
+.contact-chips--light .contact-chip {
+  background: linear-gradient(135deg, rgba(200, 245, 96, 0.2), rgba(245, 231, 74, 0.14));
+  border: 1px solid rgba(11, 61, 46, 0.12);
+}
+
+.contact-chips--light .contact-chip:hover {
+  border-color: rgba(11, 61, 46, 0.3);
+  box-shadow: 0 12px 26px rgba(11, 61, 46, 0.14);
+}
+
+.contact-chips--light .contact-chip-text small {
+  color: var(--forest-mid);
+}
+
+.contact-chips--light .contact-chip-text strong {
+  color: var(--forest-deep);
+}
+
+.contact-page-chips {
+  margin: 0.85rem 0 1.1rem;
+}
+
+.mobile-menu-contact {
+  margin-top: 0;
+}
+
+.mobile-menu-contact .contact-chip {
+  flex: 1 1 100%;
+}
+
+.success-help {
+  margin-bottom: 1.5rem;
+}
+
+.success-help p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.success-help .contact-chips {
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-chip,
+  .contact-chip::after {
+    transition: none;
+  }
 }
 
 .contact-form {

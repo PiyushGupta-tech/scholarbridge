@@ -1,6 +1,6 @@
-# Scholarship Web
+# Scholarbridge Web
 
-Local learning platform for Scholarship — courses, cart, and checkout.
+Local learning platform for Scholarbridge — courses, cart, and checkout.
 
 ## Features
 

@@ -41,13 +41,13 @@ export function Advantage() {
       <div className="container why-inner">
         <Reveal variant="up">
           <div className="why-intro">
-            <span className="why-kicker">Scholarship Advantage</span>
+            <span className="why-kicker">Scholarbridge Advantage</span>
             <h2>
-              Get the <em>Scholarship</em> advantage
+              Get the <em>Scholarbridge</em> advantage
             </h2>
             <p>
               Visual teaching, personalised paths, and human attention — motion,
-              clarity, and craft in every Scholarship experience.
+              clarity, and craft in every Scholarbridge experience.
             </p>
           </div>
         </Reveal>
@@ -81,7 +81,7 @@ export function Advantage() {
           <div className="why-cta-band">
             <div>
               <strong>Ready to feel the difference?</strong>
-              <p>Dive deeper into why learners choose Scholarship.</p>
+              <p>Dive deeper into why learners choose Scholarbridge.</p>
             </div>
             <div className="why-more">
               <Link to="/why-us" className="btn btn-lime">

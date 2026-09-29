@@ -6,8 +6,8 @@ export function WhyUsPage() {
   return (
     <InfoLayout
       eyebrow="Explore · Why Us"
-      title="Why learners choose Scholarship"
-      subtitle="Clarity, practice, and personal attention — the Scholarship advantage that turns curiosity into career momentum."
+      title="Why learners choose Scholarbridge"
+      subtitle="Clarity, practice, and personal attention — the Scholarbridge advantage that turns curiosity into career momentum."
     >
       <InfoStatRow
         items={[
@@ -20,9 +20,9 @@ export function WhyUsPage() {
 
       <Reveal>
         <section>
-          <h2>The Scholarship edge</h2>
+          <h2>The Scholarbridge edge</h2>
           <p>
-            Crowded classrooms leave gaps. Scholarship closes them with visual
+            Crowded classrooms leave gaps. Scholarbridge closes them with visual
             teaching, personalised paths, and instructors who’ve shipped real work
             in industry — so you learn what actually matters.
           </p>
@@ -59,7 +59,7 @@ export function WhyUsPage() {
           {
             icon: '🔒',
             title: 'Checkout you control',
-            text: 'Cart, buy now, and place order stay on Scholarship — clean and local.',
+            text: 'Cart, buy now, and place order stay on Scholarbridge — clean and local.',
           },
         ]}
       />
@@ -97,7 +97,7 @@ export function WhyUsPage() {
               Browse courses
             </Link>
             <Link to="/contact" className="btn btn-outline">
-              Talk to Scholarship
+              Talk to Scholarbridge
             </Link>
           </div>
         </section>

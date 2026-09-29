@@ -1,8 +1,8 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
+import { CompanyInfo } from './CompanyInfo';
+import { ContactChips } from './ContactChips';
 import { Reveal } from './Reveal';
-import { SocialLinks } from './SocialLinks';
-
 const quotes = [
   {
     text: 'The course did a great job explaining AI—from development through application. Helpful for using AI responsibly as a tool.',
@@ -14,7 +14,7 @@ const quotes = [
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160&h=160&fit=crop&auto=format',
   },
   {
-    text: 'Scholarship was truly a game-changer and a great guide as we brought our product to life with modern web and mobile skills.',
+    text: 'Scholarbridge was truly a game-changer and a great guide as we brought our product to life with modern web and mobile skills.',
     name: 'Arjun Kapoor',
     role: 'Technical Co-Founder, CTO',
     program: 'Web & Mobile',
@@ -23,7 +23,7 @@ const quotes = [
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160&h=160&fit=crop&auto=format',
   },
   {
-    text: 'Scholarship gives you the ability to be persistent. I learned exactly what I needed to know to get a new role.',
+    text: 'Scholarbridge gives you the ability to be persistent. I learned exactly what I needed to know to get a new role.',
     name: 'Rohan Verma',
     role: 'Cloud & DevOps professional',
     program: 'Cloud & DevOps',
@@ -156,7 +156,7 @@ export function Testimonials() {
                 Browse courses
               </a>
               <Link to="/why-us" className="btn btn-outline t-btn-light">
-                Why Scholarship
+                Why Scholarbridge
               </Link>
             </div>
           </div>
@@ -177,7 +177,7 @@ const CTA_LEFT = [
   },
   {
     title: 'Enroll right here',
-    text: 'Add to cart, buy now, and place your order on Scholarship without leaving the page.',
+    text: 'Add to cart, buy now, and place your order on Scholarbridge without leaving the page.',
   },
 ];
 
@@ -276,10 +276,6 @@ export function CTABand() {
                     Already joined by <strong>50,000+</strong> students
                   </span>
                 </div>
-
-                <div className="cta-social">
-                  <SocialLinks variant="light" label="Connect with Scholarship" />
-                </div>
               </div>
             </div>
           </Reveal>
@@ -296,7 +292,7 @@ export function CTABand() {
               ))}
             </ul>
             <p className="cta-rail-note">
-              Cart · Buy now · Place order — all on Scholarship
+              Cart · Buy now · Place order — all on Scholarbridge
             </p>
           </aside>
         </div>
@@ -318,7 +314,7 @@ export function Footer() {
       <div className="container footer-inner">
         <div className="footer-banner">
           <div>
-            <span className="footer-banner-kicker">Scholarship</span>
+            <span className="footer-banner-kicker">Scholarbridge</span>
             <strong>Ready for your next skill leap?</strong>
             <p>Browse programs, add to cart, and place your order — all right here.</p>
           </div>
@@ -335,13 +331,13 @@ export function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/" className="logo footer-logo">
-              Scholar<span>ship</span>
+              Scholar<span>bridge</span>
             </Link>
             <p>
               Learn from the best — build real-world skills with career-ready
               programs in AI, web, cloud, sciences, and more.
             </p>
-            <SocialLinks variant="light" label="Follow us" />
+            <ContactChips variant="dark" />
           </div>
 
           <div className="footer-col">
@@ -394,14 +390,19 @@ export function Footer() {
           </div>
         </div>
 
+        <div className="footer-company">
+          <span className="footer-cta-kicker">Company details</span>
+          <CompanyInfo variant="dark" showContact={false} />
+        </div>
+
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Scholarship. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} SCHOLARBRIDGE. All rights reserved.
+          </p>
           <div className="footer-bottom-links">
             <Link to="/cart">Cart</Link>
             <Link to="/#courses">All Programs</Link>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
-              WhatsApp Support
-            </a>
+            <Link to="/contact">Contact Support</Link>
           </div>
         </div>
       </div>
